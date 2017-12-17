@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.3.1</string>
         <key>fileName</key>
-        <string>C:/Users/oLaudix/Documents/GitHub/IdleGame/IdleGame/Explosions/normal medium/normal medium.tps</string>
+        <string>C:/Users/oLaudix/Documents/GitHub/IdleGame/IdleGame/Explosions/explosion_huge/explosion huge.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -28,7 +28,7 @@
             </struct>
         </array>
         <key>allowRotation</key>
-        <true/>
+        <false/>
         <key>shapeDebug</key>
         <false/>
         <key>dpi</key>
@@ -36,7 +36,7 @@
         <key>dataFormat</key>
         <string>spritesheet-only</string>
         <key>textureFileName</key>
-        <filename>../../IdleGame/explosion_normal_medium.png</filename>
+        <filename>../../IdleGame/explosion_normal_huge.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
@@ -104,7 +104,7 @@
         <key>algorithmSettings</key>
         <struct type="AlgorithmSettings">
             <key>algorithm</key>
-            <enum type="AlgorithmSettings::AlgorithmId">MaxRects</enum>
+            <enum type="AlgorithmSettings::AlgorithmId">Basic</enum>
             <key>freeSizeMode</key>
             <enum type="AlgorithmSettings::AlgorithmFreeSizeMode">Best</enum>
             <key>sizeConstraints</key>
@@ -119,7 +119,7 @@
             <key>basic</key>
             <struct type="AlgorithmBasicSettings">
                 <key>sortBy</key>
-                <enum type="AlgorithmBasicSettings::SortBy">Best</enum>
+                <enum type="AlgorithmBasicSettings::SortBy">Name</enum>
                 <key>order</key>
                 <enum type="AlgorithmBasicSettings::Order">Ascending</enum>
             </struct>
@@ -191,43 +191,39 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">explosion_normal_medium_01.png</key>
-            <key type="filename">explosion_normal_medium_02.png</key>
-            <key type="filename">explosion_normal_medium_03.png</key>
-            <key type="filename">explosion_normal_medium_04.png</key>
-            <key type="filename">explosion_normal_medium_05.png</key>
-            <key type="filename">explosion_normal_medium_06.png</key>
-            <key type="filename">explosion_normal_medium_07.png</key>
-            <key type="filename">explosion_normal_medium_09.png</key>
-            <key type="filename">explosion_normal_medium_10.png</key>
-            <key type="filename">explosion_normal_medium_11.png</key>
-            <key type="filename">explosion_normal_medium_12.png</key>
-            <key type="filename">explosion_normal_medium_13.png</key>
-            <key type="filename">explosion_normal_medium_14.png</key>
-            <key type="filename">explosion_normal_medium_15.png</key>
-            <key type="filename">explosion_normal_medium_16.png</key>
-            <key type="filename">explosion_normal_medium_17.png</key>
-            <key type="filename">explosion_normal_medium_18.png</key>
-            <key type="filename">explosion_normal_medium_19.png</key>
-            <key type="filename">explosion_normal_medium_20.png</key>
-            <key type="filename">explosion_normal_medium_21.png</key>
-            <key type="filename">explosion_normal_medium_22.png</key>
-            <key type="filename">explosion_normal_medium_23.png</key>
-            <key type="filename">explosion_normal_medium_24.png</key>
-            <key type="filename">explosion_normal_medium_25.png</key>
-            <key type="filename">explosion_normal_medium_26.png</key>
-            <key type="filename">explosion_normal_medium_27.png</key>
-            <key type="filename">explosion_normal_medium_28.png</key>
-            <key type="filename">explosion_normal_medium_29.png</key>
+            <key type="filename">explosion_normal_huge_01.png</key>
+            <key type="filename">explosion_normal_huge_02.png</key>
+            <key type="filename">explosion_normal_huge_03.png</key>
+            <key type="filename">explosion_normal_huge_04.png</key>
+            <key type="filename">explosion_normal_huge_05.png</key>
+            <key type="filename">explosion_normal_huge_06.png</key>
+            <key type="filename">explosion_normal_huge_07.png</key>
+            <key type="filename">explosion_normal_huge_08.png</key>
+            <key type="filename">explosion_normal_huge_09.png</key>
+            <key type="filename">explosion_normal_huge_10.png</key>
+            <key type="filename">explosion_normal_huge_11.png</key>
+            <key type="filename">explosion_normal_huge_12.png</key>
+            <key type="filename">explosion_normal_huge_13.png</key>
+            <key type="filename">explosion_normal_huge_14.png</key>
+            <key type="filename">explosion_normal_huge_15.png</key>
+            <key type="filename">explosion_normal_huge_16.png</key>
+            <key type="filename">explosion_normal_huge_17.png</key>
+            <key type="filename">explosion_normal_huge_18.png</key>
+            <key type="filename">explosion_normal_huge_19.png</key>
+            <key type="filename">explosion_normal_huge_20.png</key>
+            <key type="filename">explosion_normal_huge_21.png</key>
+            <key type="filename">explosion_normal_huge_22.png</key>
+            <key type="filename">explosion_normal_huge_23.png</key>
+            <key type="filename">explosion_normal_huge_24.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>18,18,35,35</rect>
+                <rect>28,34,56,69</rect>
                 <key>scale9Paddings</key>
-                <rect>18,18,35,35</rect>
+                <rect>28,34,56,69</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -243,9 +239,9 @@
         <key>ignoredWarnings</key>
         <array/>
         <key>commonDivisorX</key>
-        <uint>70</uint>
+        <uint>113</uint>
         <key>commonDivisorY</key>
-        <uint>70</uint>
+        <uint>137</uint>
         <key>packNormalMaps</key>
         <false/>
         <key>autodetectNormalMaps</key>
