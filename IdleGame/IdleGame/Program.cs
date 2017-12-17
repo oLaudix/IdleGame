@@ -12,9 +12,9 @@ namespace SpritemapStuff
         static void Main(string[] args)
         {
             // Create a game that's 160 x 120
-            var game = new Game("Spritemap Animation", 1000, 700);
+            var game = new Game("Spritemap Animation", 500, 350);
             // Set the window scale to 3x to see the sprite better.
-            game.SetWindowScale(1);
+            game.SetWindowScale(2);
             // Set the background color to a bluish hue.
             game.Color = new Color(0.3f, 0.5f, 0.7f);
 
