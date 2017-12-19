@@ -5,16 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using Otter;
 
-namespace SpritemapStuff
+namespace IdleGame
 {
     class Program
     {
         static void Main(string[] args)
         {
             // Create a game that's 160 x 120
-            var game = new Game("Spritemap Animation", 500, 350);
+            var game = new Game("Spritemap Animation", 1200, 700);
             // Set the window scale to 3x to see the sprite better.
-            game.SetWindowScale(2);
+            game.SetWindowScale(1f);
             // Set the background color to a bluish hue.
             game.Color = new Color(0.3f, 0.5f, 0.7f);
 
@@ -22,8 +22,31 @@ namespace SpritemapStuff
             var scene = new Scene();
             // Add the animating entity to the scene.
             scene.Add(new AnimatingEntity(game.HalfWidth, game.HalfHeight));
+            scene.Add(new AnimatingEntity(game.HalfWidth+20, game.HalfHeight+20));
+            Player player = new Player(1, 2);
+            Unit test = new Unit(1, "Takeda", 1, 50);
+            test.heroSkills.Add(new UnitSkill(BonusType.HeroDamage, 1.0f, 10, test.GetUpgradeCostByLevel(10)*10));
+            test.UpgradeHero(); test.UpgradeHero(); test.UpgradeHero(); test.UpgradeHero(); test.UpgradeHero(); test.UpgradeHero(); test.UpgradeHero(); test.UpgradeHero(); test.UpgradeHero();
+            //Console.WriteLine("Level: " + test.heroLevel);
+            //Console.WriteLine("Damage: " + test.GetDPSByLevel(test.heroLevel));
+            //Console.WriteLine("Cost: " + test.GetUpgradeCostByLevel(test.heroLevel));
+            player.Units[0].heroLevel = 0;
+            player.gearList[10].unlocked = true;
+            //player.gearList[10].UpgradeGear();
+            player.Units[0].heroSkills[0].isUnlocked = false;
+            player.Units[0].heroSkills[1].isUnlocked = false;
+            player.Units[0].heroSkills[2].isUnlocked = false;
+            player.Units[0].heroSkills[3].isUnlocked = true;
+            player.Units[0].heroSkills[4].isUnlocked = false;
+            player.Units[0].heroSkills[5].isUnlocked = false;
+            player.Units[0].heroSkills[6].isUnlocked = false;
+            Console.WriteLine("Name: " + player.Units[0].name);
+            Console.WriteLine("Damage: " + player.Units[0].GetDPSByLevel(player.Units[0].heroLevel));
+            Console.WriteLine("Hero additional dmg: " + player.Units[10].GetUpgradeCostByLevel(0));
+            Console.WriteLine("Cost: " + player.GetBonusType(BonusType.CriticalDamage));
 
             // Start the game with the scene that was just created.
+            game.MouseVisible = true;
             game.Start(scene);
         }
     }

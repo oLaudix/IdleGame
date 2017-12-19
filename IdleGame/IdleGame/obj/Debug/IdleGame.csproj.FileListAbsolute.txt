@@ -19,8 +19,8 @@ c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\obj\Debug\IdleGame.
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\obj\Debug\IdleGame.exe
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\obj\Debug\IdleGame.pdb
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\enemy_animations.png
-c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\obj\Debug\IdleGame.csprojResolveAssemblyReference.cache
 C:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\iron_iso.png
 C:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\plane.png
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\dicokka.png
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\rocket.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\obj\Debug\IdleGame.csprojResolveAssemblyReference.cache
