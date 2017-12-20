@@ -12,15 +12,15 @@ namespace IdleGame
         public int level;
         public int maxLevel;
         public BonusType bonusType;
-        public float bonusPerLevel;
+        public double bonusPerLevel;
         public BonusType bonusType2;
-        public float bonusPerLevel2;
-        public float damageBonusBase;
-        public float costCoef = 0.7f;
-        public float costExpo = 1.5f;
+        public double bonusPerLevel2;
+        public double damageBonusBase;
+        public double costCoef = 0.7f;
+        public double costExpo = 1.5f;
         public bool unlocked;
         public string name;
-        public Gear(GearID GearID, string name, int maxLevel, BonusType bonusType2, float bonusPerLevel2, float damageBonusBase, float bonusPerLevel)
+        public Gear(GearID GearID, string name, int maxLevel, BonusType bonusType2, double bonusPerLevel2, double damageBonusBase, double bonusPerLevel)
         {
             this.GearID = GearID;
             this.name = name;
@@ -44,12 +44,12 @@ namespace IdleGame
             return this.bonusType2;
         }
 
-        public float GetDamageBonus()
+        public double GetDamageBonus()
         {
             return this.damageBonusBase + this.bonusPerLevel * (this.level - 1);
         }
 
-        public float GetBonusMagnitude()
+        public double GetBonusMagnitude()
         {
             return bonusPerLevel2 * this.level;
         }

@@ -9,12 +9,12 @@ namespace IdleGame
     public class UnitSkill
     {
         public string description;
-        public float unlockCost;
-        public float magnitude;
+        public double unlockCost;
+        public double magnitude;
         public int requiredLevel;
         public bool isUnlocked;
         public BonusType bonusType;
-        public UnitSkill(BonusType bonusType, float magnitude, int requiredLevel, float unlockCost)
+        public UnitSkill(BonusType bonusType, double magnitude, int requiredLevel, double unlockCost)
         {
             this.isUnlocked = false;
             //this.description = description;

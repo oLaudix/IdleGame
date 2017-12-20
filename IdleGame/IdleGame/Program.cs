@@ -24,26 +24,19 @@ namespace IdleGame
             scene.Add(new AnimatingEntity(game.HalfWidth, game.HalfHeight));
             scene.Add(new AnimatingEntity(game.HalfWidth+20, game.HalfHeight+20));
             Player player = new Player(1, 2);
-            Unit test = new Unit(1, "Takeda", 1, 50);
-            test.heroSkills.Add(new UnitSkill(BonusType.HeroDamage, 1.0f, 10, test.GetUpgradeCostByLevel(10)*10));
-            test.UpgradeHero(); test.UpgradeHero(); test.UpgradeHero(); test.UpgradeHero(); test.UpgradeHero(); test.UpgradeHero(); test.UpgradeHero(); test.UpgradeHero(); test.UpgradeHero();
-            //Console.WriteLine("Level: " + test.heroLevel);
-            //Console.WriteLine("Damage: " + test.GetDPSByLevel(test.heroLevel));
-            //Console.WriteLine("Cost: " + test.GetUpgradeCostByLevel(test.heroLevel));
-            player.Units[0].heroLevel = 0;
-            player.gearList[10].unlocked = true;
             //player.gearList[10].UpgradeGear();
-            player.Units[0].heroSkills[0].isUnlocked = false;
-            player.Units[0].heroSkills[1].isUnlocked = false;
-            player.Units[0].heroSkills[2].isUnlocked = false;
-            player.Units[0].heroSkills[3].isUnlocked = true;
-            player.Units[0].heroSkills[4].isUnlocked = false;
-            player.Units[0].heroSkills[5].isUnlocked = false;
-            player.Units[0].heroSkills[6].isUnlocked = false;
-            Console.WriteLine("Name: " + player.Units[0].name);
-            Console.WriteLine("Damage: " + player.Units[0].GetDPSByLevel(player.Units[0].heroLevel));
-            Console.WriteLine("Hero additional dmg: " + player.Units[10].GetUpgradeCostByLevel(0));
-            Console.WriteLine("Cost: " + player.GetBonusType(BonusType.CriticalDamage));
+            player.StartStage();
+            while (true)
+            {
+                player.Attack(1);
+                Console.Clear();
+                Console.WriteLine("Stage(" + player.stage + "): " + player.currentStage.CurrentHP + "/" + player.currentStage.MaxHP);
+                Console.WriteLine("Prize: " + player.currentStage.Prize);
+                Console.WriteLine("Stage Kills: " + player.currentStage.Kills);
+                Console.WriteLine("Damage: " + player.GetTotalDps());
+                Console.WriteLine("Gold: " + player.gold);
+                System.Threading.Thread.Sleep(10);
+            }
 
             // Start the game with the scene that was just created.
             game.MouseVisible = true;

@@ -24,3 +24,6 @@ C:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\plane.png
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\dicokka.png
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\rocket.png
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\obj\Debug\IdleGame.csprojResolveAssemblyReference.cache
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Reality Hyper Regular.ttf
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Volter__28Goldfish_29.ttf
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\wendy.ttf

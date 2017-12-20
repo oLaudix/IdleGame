@@ -18,12 +18,19 @@ namespace IdleGame
         public Double nextUpgradeCost;
         public Double criticalDamageMultiplier;
         public Double criticalChance;
+        public int stage;
+        public stage currentStage;
+        Random Ramdom = new Random();
+        public Double gold;
+        public Double honor;
         public Player(double costMultiplier, double purchaseCost)
         {
             this.heroSkills = new List<int>();
             this.costMultiplier = costMultiplier;
             this.purchaseCost = purchaseCost;
-            this.playerLevel = 0;
+            this.playerLevel = 1;
+            this.stage = 0;
+            this.gold = 0;
             gearList = new List<Gear>();
             Units = new List<Unit>();
             this.gearList.Add(new Gear(GearID.Gear1, "Amulet of the Valrunes", 0, BonusType.MonsterGold, 0.1f, 0.5f, 0.25f));
@@ -283,7 +290,7 @@ namespace IdleGame
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllDamage, 0.05f, 400, tmp.GetUpgradeCostByLevel(400) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllGold, 0.15f, 800, tmp.GetUpgradeCostByLevel(800) * 10));
             Units.Add(tmp);
-            /*tmp = new Unit(27, "Flavius", 27, 2.59E+46f);
+            tmp = new Unit(27, "Flavius", 27, 2.59E+46);
             tmp.heroSkills.Add(new UnitSkill(BonusType.HeroDamage, 3.0f, 10, tmp.GetUpgradeCostByLevel(10) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.HeroDamage, 7.0f, 25, tmp.GetUpgradeCostByLevel(25) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllDamage, 0.1f, 50, tmp.GetUpgradeCostByLevel(50) * 10));
@@ -292,7 +299,7 @@ namespace IdleGame
             tmp.heroSkills.Add(new UnitSkill(BonusType.CriticalDamage, 0.3f, 400, tmp.GetUpgradeCostByLevel(400) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.ChestGold, 0.2f, 800, tmp.GetUpgradeCostByLevel(800) * 10));
             Units.Add(tmp);
-            tmp = new Unit(28, "Chester", 28, 2.85E+61f);
+            tmp = new Unit(28, "Chester", 28, 2.85E+61);
             tmp.heroSkills.Add(new UnitSkill(BonusType.HeroDamage, 3.5f, 10, tmp.GetUpgradeCostByLevel(10) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllDamage, 0.1f, 25, tmp.GetUpgradeCostByLevel(25) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.HeroDamage, 4.0f, 50, tmp.GetUpgradeCostByLevel(50) * 10));
@@ -301,7 +308,7 @@ namespace IdleGame
             tmp.heroSkills.Add(new UnitSkill(BonusType.CriticalChance, 0.03f, 400, tmp.GetUpgradeCostByLevel(400) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllDamage, 0.15f, 800, tmp.GetUpgradeCostByLevel(800) * 10));
             Units.Add(tmp);
-            tmp = new Unit(29, "Mohacas", 29, 3.14E+81f);
+            tmp = new Unit(29, "Mohacas", 29, 3.14E+81);
             tmp.heroSkills.Add(new UnitSkill(BonusType.HeroDamage, 3.3f, 10, tmp.GetUpgradeCostByLevel(10) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.HeroDamage, 5.5f, 25, tmp.GetUpgradeCostByLevel(25) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllGold, 0.1f, 50, tmp.GetUpgradeCostByLevel(50) * 10));
@@ -310,7 +317,7 @@ namespace IdleGame
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllDamage, 0.1f, 400, tmp.GetUpgradeCostByLevel(400) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllGold, 0.3f, 800, tmp.GetUpgradeCostByLevel(800) * 10));
             Units.Add(tmp);
-            tmp = new Unit(30, "Jaqulin", 30, 3.14E+96f);
+            tmp = new Unit(30, "Jaqulin", 30, 3.14E+96);
             tmp.heroSkills.Add(new UnitSkill(BonusType.HeroDamage, 10.0f, 10, tmp.GetUpgradeCostByLevel(10) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.PlayerDamage, 0.2f, 25, tmp.GetUpgradeCostByLevel(25) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.PlayerDamageDPS, 0.05f, 50, tmp.GetUpgradeCostByLevel(50) * 10));
@@ -319,7 +326,7 @@ namespace IdleGame
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllDamage, 0.2f, 400, tmp.GetUpgradeCostByLevel(400) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllDamage, 0.3f, 800, tmp.GetUpgradeCostByLevel(800) * 10));
             Units.Add(tmp);
-            tmp = new Unit(31, "Pixie", 31, 3.76E+101f);
+            tmp = new Unit(31, "Pixie", 31, 3.76E+101);
             tmp.heroSkills.Add(new UnitSkill(BonusType.HeroDamage, 9.0f, 10, tmp.GetUpgradeCostByLevel(10) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.HeroDamage, 20.0f, 25, tmp.GetUpgradeCostByLevel(25) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.CriticalChance, 0.01f, 50, tmp.GetUpgradeCostByLevel(50) * 10));
@@ -328,7 +335,7 @@ namespace IdleGame
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllDamage, 0.1f, 400, tmp.GetUpgradeCostByLevel(400) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllGold, 0.15f, 800, tmp.GetUpgradeCostByLevel(800) * 10));
             Units.Add(tmp);
-            tmp = new Unit(32, "Jackalope", 32, 4.14E+136f);
+            tmp = new Unit(32, "Jackalope", 32, 4.14E+136);
             tmp.heroSkills.Add(new UnitSkill(BonusType.HeroDamage, 0.4f, 10, tmp.GetUpgradeCostByLevel(10) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.HeroDamage, 0.2f, 25, tmp.GetUpgradeCostByLevel(25) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllGold, 0.25f, 50, tmp.GetUpgradeCostByLevel(50) * 10));
@@ -337,7 +344,7 @@ namespace IdleGame
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllDamage, 0.3f, 400, tmp.GetUpgradeCostByLevel(400) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllDamage, 0.1f, 800, tmp.GetUpgradeCostByLevel(800) * 10));
             Units.Add(tmp);
-            tmp = new Unit(33, "Dark Lord", 33, 4.56E+141f);
+            tmp = new Unit(33, "Dark Lord", 33, 4.56E+141);
             tmp.heroSkills.Add(new UnitSkill(BonusType.HeroDamage, 20.0f, 10, tmp.GetUpgradeCostByLevel(10) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.PlayerDamage, 0.2f, 25, tmp.GetUpgradeCostByLevel(25) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.PlayerDamageDPS, 0.01f, 50, tmp.GetUpgradeCostByLevel(50) * 10));
@@ -345,12 +352,12 @@ namespace IdleGame
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllDamage, 0.2f, 200, tmp.GetUpgradeCostByLevel(200) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllDamage, 0.3f, 400, tmp.GetUpgradeCostByLevel(400) * 10));
             tmp.heroSkills.Add(new UnitSkill(BonusType.AllDamage, 0.4f, 800, tmp.GetUpgradeCostByLevel(800) * 10));
-            Units.Add(tmp);*/
+            Units.Add(tmp);
         }
 
-        public float getDamageArtifact()
+        public double getDamageArtifact()
         {
-            float num = 0f;
+            double num = 0f;
             foreach (var item in this.gearList)
             {
                 if (item.unlocked)
@@ -361,9 +368,9 @@ namespace IdleGame
             return num;
         }
 
-        public float GetBonusType(BonusType bonusTypee)
+        public double GetBonusType(BonusType bonusTypee)
         {
-            float num = 0f;
+            double num = 0f;
             foreach (var item in this.gearList)
             {
                 if (item.unlocked)
@@ -374,7 +381,7 @@ namespace IdleGame
                     }
                 }
             }
-            float num2 = 0f;
+            double num2 = 0f;
             foreach (var unit in Units)
             {
                 foreach (var skill in unit.heroSkills)
@@ -391,5 +398,138 @@ namespace IdleGame
             return num + num2;
         }
 
+        public double GetHeroDamage(Unit Unit)
+        {
+            return Unit.GetDPSByLevel(Unit.heroLevel);
+        }
+
+        public double GetTotalHeroDamage()
+        {
+            double num = 0;
+            foreach (var unit in Units)
+            {
+                num += GetHeroDamage(unit);
+            }
+            return num;
+        }
+
+        public double GetTotalDps()
+        {
+            
+            double num2 = GetPlayerAttackDamageByLevel(this.playerLevel);
+            return (this.GetTotalHeroDamage() * this.GetBonusType(BonusType.AllDamage) * this.getDamageArtifact()) + (num2 * 15);
+        }
+
+        public double GetUpgradeCostByLevel(int iLevel)
+        {
+            double num = (double)Math.Min(25, 3 + iLevel) * Math.Pow(1.074, (double)iLevel);
+            double a = num * (1.0 - this.GetBonusType(BonusType.UpgradeCost));
+            return Math.Ceiling(a);
+        }
+
+        private double GetPlayerAttackDamageByLevel(int iLevel)
+        {
+            double num = (double)iLevel * Math.Pow(1.05, (double)iLevel);
+            double statBonus = this.GetBonusType(BonusType.AllDamage);
+            double statBonus2 = this.GetBonusType(BonusType.PlayerDamage);
+            double num2 = this.GetBonusType(BonusType.PlayerDamageDPS) * this.GetTotalHeroDamage();
+            double artifactDamageBonus = getDamageArtifact();
+            double num3 = (num * (1.0 + statBonus) + num2) * (1.0 + statBonus2) * (1.0 + artifactDamageBonus);
+            if (num3 <= 1.0)
+            {
+                num3 = 1.0;
+            }
+            return num3;
+        }
+    
+        public double GetStageBaseHP()
+        {
+            return 18.5 * Math.Pow(1.57, (double)Math.Min((float)this.stage, 156)) * Math.Pow(1.17, (double)Math.Max((float)this.stage - 156, 0f));
+        }
+        public double GetStageBaseGold()
+        {
+            double stageBaseHP = this.GetStageBaseHP();
+            double num = stageBaseHP * (double)(0.02 + 0.00045 * Math.Min((float)this.stage, 150));
+            return Math.Round(num * Math.Ceiling(1.0 + this.GetBonusType(BonusType.AllGold)));
+        }
+        public double GetTreasureSpawnChance()
+        {
+            return 0.021f * (1f + this.GetBonusType(BonusType.ChestChance));
+        }
+
+        public double GetTreasureGold()
+        {
+            return Math.Round(this.GetStageBaseGold() * 10 * (1f + this.GetBonusType(BonusType.ChestGold)));
+        }
+        
+        public void StartStage()
+        {
+            stage++;
+            Double randomNumber = Ramdom.NextDouble();
+            if (GetTreasureSpawnChance() > randomNumber)
+                this.currentStage = new stage(GetStageBaseHP(), GetStageBaseGold(), true);
+            else
+                this.currentStage = new stage(GetStageBaseHP(), GetStageBaseGold(), true);
+        }
+
+        public void Attack(int timesPerSecond)
+        {
+            this.currentStage.CurrentHP -= (this.GetTotalDps()/timesPerSecond);
+            if (this.currentStage.CurrentHP <= 0)
+            {
+                if (this.currentStage.Kills < 10)
+                {
+                    this.currentStage.CurrentHP = currentStage.MaxHP;
+                    this.currentStage.Kills++;
+                    this.gold += this.currentStage.Prize;
+                }
+                else
+                {
+                    this.gold += this.currentStage.Prize;
+                    StartStage();
+                }
+            }
+        }
+
+        public double GetHeroLevelPrestigeRelics()
+        {
+            int num = 0;
+            foreach (var unit in this.Units)
+            {
+                num += unit.heroLevel;
+            }
+            double num2 = (double)num / (double)500;
+            num2 *= 1.0 + this.GetBonusType(BonusType.BonusRelic);
+            num2 = Math.Ceiling(num2);
+            return num2;
+        }
+
+        public double GetUnlockedStagePrestigeRelics()
+        {
+            double num = 0.0;
+            int unlockedStage = this.stage;
+            num += Math.Pow((double)(this.stage / 15), 1.7);
+            num *= 1.0 + this.GetBonusType(BonusType.BonusRelic);
+            return Math.Ceiling(num);
+        }
+        public double GetPrestigeRelicCount()
+        {
+            double num = (double)Math.Round((float)this.GetHeroLevelPrestigeRelics());
+            num += (double)Math.Round((float)this.GetUnlockedStagePrestigeRelics());
+            return 2.0 * num;
+        }
+        public void Prestige()
+        {
+            foreach (var unit in Units)
+            {
+                unit.heroLevel = 0;
+                foreach (var skill in unit.heroSkills)
+                    skill.isUnlocked = false;
+                this.gold = 0;
+                this.stage = 0;
+                this.honor += GetPrestigeRelicCount();
+                StartStage();
+            }
+        }
     }
 }
