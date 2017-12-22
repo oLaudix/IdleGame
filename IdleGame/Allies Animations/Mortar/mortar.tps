@@ -36,7 +36,7 @@
         <key>dataFormat</key>
         <string>spritesheet-only</string>
         <key>textureFileName</key>
-        <filename>../../IdleGame/mortar.png</filename>
+        <filename>../../IdleGame/Assets/Img/mortar.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
@@ -209,6 +209,7 @@
             <key type="filename">Mortar_16.png</key>
             <key type="filename">Mortar_17.png</key>
             <key type="filename">Mortar_18.png</key>
+            <key type="filename">Mortar_19.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>

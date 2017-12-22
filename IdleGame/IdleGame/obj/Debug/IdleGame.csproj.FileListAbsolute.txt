@@ -5,6 +5,35 @@ c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\csfml-win
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\openal32.dll
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\csfml-network-2.dll
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\libsndfile-1.dll
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\crate01.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des01.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des02.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des03.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des04.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des05.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des06.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des07.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des08.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des09.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des10.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des11.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des12.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des13.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des14.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des15.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des16.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des17.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des18.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des19.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des20.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des21.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des22.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des23.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des24.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des25.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des26.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\des27.png
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Decals\sandbags.png
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\explosion_grenade_big.png
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\explosion_grenade_medium.png
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\explosion_normal_big.png
@@ -22,7 +51,6 @@ c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Im
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\HPBarFR.png
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\iron_iso.png
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\minigun.png
-c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\mortar.png
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\Player.png
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\rocket.png
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Img\sniper.png
@@ -32,15 +60,16 @@ c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Fo
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Fonts\Reality Hyper Regular.ttf
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Fonts\Volter__28Goldfish_29.ttf
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Fonts\wendy.ttf
-c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Sounds\cokka.ogg
-c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Sounds\Rolemusic - If Pigs Could Sing.ogg
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Fonts\ARCADECLASSIC.TTF
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Fonts\ca.ttf
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Fonts\Mecha.ttf
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Fonts\Mecha_Condensed.ttf
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Fonts\PressStart2P.ttf
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Fonts\trench100free.ttf
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Sounds\cokka.ogg
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Sounds\ironiso.ogg
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Sounds\minigun.ogg
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Sounds\Rolemusic - If Pigs Could Sing.ogg
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\IdleGame.exe.config
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\IdleGame.exe
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\IdleGame.pdb
@@ -50,8 +79,7 @@ c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\sfmlnet-w
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\sfmlnet-system-2.dll
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\sfmlnet-audio-2.dll
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Otter.pdb
+c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\obj\Debug\IdleGame.csprojResolveAssemblyReference.cache
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\obj\Debug\IdleGame.csproj.CoreCompileInputs.cache
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\obj\Debug\IdleGame.exe
 c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\obj\Debug\IdleGame.pdb
-c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\bin\Debug\Assets\Sounds\ironiso.ogg
-c:\Users\oLaudix\Documents\GitHub\IdleGame\IdleGame\IdleGame\obj\Debug\IdleGame.csprojResolveAssemblyReference.cache
