@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace IdleGame
 {
+    public enum UnitType
+    {
+        Cokka,
+
+    }
     public enum BonusType
     {
         AllDamage,
