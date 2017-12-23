@@ -501,6 +501,7 @@ namespace IdleGame
             this.Sound = Sound;
             spritemap.CenterOrigin();
             spritemap.Play(Animation.Shoot);
+            spritemap.
             AddGraphic(spritemap);
         }
 
