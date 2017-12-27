@@ -83,9 +83,11 @@ namespace IdleGame
             HPBG.Scale = 1f;
             HPFG.Scale = 1f;
             //for (int a = 0;a < 1; a++)
-            /*Add(new Cokka(random.Next(100, 1800), random.Next(550, 1000), random, cokka));
-            Add(new IronIso(random.Next(100, 1800), random.Next(550, 1000), random, ironiso));
-            Add(new Heli(random.Next(100, 1800), random.Next(550, 1000), random, cokka));
+            Add(new Cokka(random.Next(100, 1800), random.Next(550, 1000), random, cokka));
+
+
+            //Add(new IronIso(random.Next(100, 1800), random.Next(550, 1000), random, ironiso));
+            /*Add(new Heli(random.Next(100, 1800), random.Next(550, 1000), random, cokka));
             Add(new Hover(random.Next(100, 1800), random.Next(550, 1000), random, cokka));
             Add(new Mortar(random.Next(100, 1800), random.Next(550, 1000), random, cokka));
             Add(new Minigun(random.Next(100, 1800), random.Next(550, 1000), random, cokka));
@@ -501,7 +503,7 @@ namespace IdleGame
             this.Sound = Sound;
             spritemap.CenterOrigin();
             spritemap.Play(Animation.Shoot);
-            spritemap.
+            //spritemap.
             AddGraphic(spritemap);
         }
 

@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.3.1</string>
         <key>fileName</key>
-        <string>C:/Users/oLaudix/Documents/GitHub/IdleGame/IdleGame/Allies Animations/Cokka/Dicokka.tps</string>
+        <string>C:/Users/M/Documents/GitHub/IdleGame/IdleGame/Allies Animations/Cokka/Dicokka.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -36,7 +36,7 @@
         <key>dataFormat</key>
         <string>spritesheet-only</string>
         <key>textureFileName</key>
-        <filename>../../IdleGame/dicokka.png</filename>
+        <filename>../../../../IdleGame2.0/Assets/spritesheets/dicokka.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
