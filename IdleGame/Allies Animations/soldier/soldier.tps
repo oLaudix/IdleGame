@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.3.1</string>
         <key>fileName</key>
-        <string>C:/Users/oLaudix/Documents/GitHub/IdleGame/IdleGame/Allies Animations/soldier/soldier.tps</string>
+        <string>C:/Users/M/Documents/GitHub/IdleGame/IdleGame/Allies Animations/soldier/soldier.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -28,7 +28,7 @@
             </struct>
         </array>
         <key>allowRotation</key>
-        <false/>
+        <true/>
         <key>shapeDebug</key>
         <false/>
         <key>dpi</key>
@@ -36,7 +36,7 @@
         <key>dataFormat</key>
         <string>spritesheet-only</string>
         <key>textureFileName</key>
-        <filename>../../IdleGame/soldier.png</filename>
+        <filename>../../../../IdleGame2.0/Assets/spritesheets/soldier.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
@@ -191,26 +191,29 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">Soldier_01.png</key>
-            <key type="filename">Soldier_02.png</key>
-            <key type="filename">Soldier_03.png</key>
-            <key type="filename">Soldier_04.png</key>
+            <key type="filename">../../Rebel Soldier anims/Animations/Shoot_Machinegun_01.png</key>
+            <key type="filename">../../Rebel Soldier anims/Animations/Shoot_Machinegun_02.png</key>
+            <key type="filename">../../Rebel Soldier anims/Animations/Shoot_Machinegun_03.png</key>
+            <key type="filename">../../Rebel Soldier anims/Animations/Shoot_Machinegun_04.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>16,7,32,15</rect>
+                <rect>22,17,44,34</rect>
                 <key>scale9Paddings</key>
-                <rect>16,7,32,15</rect>
+                <rect>22,17,44,34</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>.</filename>
+            <filename>../../Rebel Soldier anims/Animations/Shoot_Machinegun_01.png</filename>
+            <filename>../../Rebel Soldier anims/Animations/Shoot_Machinegun_02.png</filename>
+            <filename>../../Rebel Soldier anims/Animations/Shoot_Machinegun_03.png</filename>
+            <filename>../../Rebel Soldier anims/Animations/Shoot_Machinegun_04.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
@@ -219,9 +222,9 @@
         <key>ignoredWarnings</key>
         <array/>
         <key>commonDivisorX</key>
-        <uint>64</uint>
+        <uint>88</uint>
         <key>commonDivisorY</key>
-        <uint>29</uint>
+        <uint>68</uint>
         <key>packNormalMaps</key>
         <false/>
         <key>autodetectNormalMaps</key>
