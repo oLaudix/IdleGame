@@ -36,7 +36,7 @@
         <key>dataFormat</key>
         <string>spritesheet-only</string>
         <key>textureFileName</key>
-        <filename>../../IdleGame/explosion_grenade_medium.png</filename>
+        <filename>../../../../IdleGame2.0/Assets/spritesheets/explosion_shell_normal.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
